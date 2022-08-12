@@ -3,6 +3,8 @@ name: Azure ARM
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     steps:
 
       # Checkout code
