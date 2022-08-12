@@ -1,6 +1,4 @@
 on: [push]
-permissions:
-  id-token: write
 name: Azure ARM
 jobs:
   build-and-deploy:
