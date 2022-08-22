@@ -1,0 +1,50 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+		"vnetName": {
+			"value": "vnet-test" 
+        },
+		"vnetPrefix": {
+            "value" : [
+				"10.0.0.0/16"
+			]
+		},
+		"nsgName": {
+			"value": "testNsg" 
+        },
+		"subnetName": {
+			"value": "subnet-test"
+        },
+		"subnetPrefix": {
+			"value": "10.0.0.0/24" 
+        },
+		"pipSku": {
+			"value": "Standard"
+        },
+		"pipallocationmethod": {
+			"value": "Static" 
+        },
+		"vmNamePrefix": {
+			"value": "prod"
+        },
+		"vmSize": {
+			"value": "Standard_B1ms" 
+        },
+		"pcName": {
+			"value": "vm-bicep-test" 
+        },
+		"adminName": {
+			"value": "test-user"
+        },
+		"adminPass": {
+			"value": "1Eppen_d0rf!" 
+        },
+        "publicIpName": {
+            "value": "test-public-ip"
+        },
+        "nicName": {
+            "value": "test-interface"
+        }
+    }
+}

@@ -30,4 +30,6 @@ resource stg 'Microsoft.Storage/storageAccounts@2021-04-01' = {
   }
 }
 
+@description('The Endpoints of the Storage account.')
 output storageEndpoint object = stg.properties.primaryEndpoints
+
