@@ -1,10 +1,10 @@
 # Bicep Workshop
-Developed for testing functionality of Azure Bicep.
+Files for Bicep Workshop - 22. August
 
 ## Features
 
-- Deployment of Azure Resources
-- Easy-to-update Environment Configurations
+Examples folder contains examples shown in the workshop.
+CLI file contains some common AZ Cli scripts for working with Azure and Bicep
 
 ## Usage
 

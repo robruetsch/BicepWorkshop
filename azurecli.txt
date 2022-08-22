@@ -1,0 +1,18 @@
+-- login to Azure Account
+
+az login -u <username>@eppendorf.de
+
+-- Set the proper subscription
+az account set --subscription "VNLS-DEV-azusub005"
+
+-- Create a resource group (use BicepWorkshop as prefix so it can be easily cleaned up later)
+
+az group create -l westeurope -n BicepWorkshop<USER_INITIALS>
+
+-- Deploying bicep file
+
+az deployment group create --resource-group "<RESOURCE_GROUP_NAME>" --name "<DEPLOYMENT_NAME>" --template-file "<FILE>.bicep"
+
+-- Deploying a bicep file with Parameters
+
+az deployment group create -g $resourceGroupName -n $deploymentName -f $templateFile -p $templateParameterFile
